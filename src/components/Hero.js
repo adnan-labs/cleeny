@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaArrowRight, FaHome, FaTools, FaCheckCircle, FaPlay, FaTrophy } from 'react-icons/fa';
+import {  FaArrowRight, FaHome, FaTools, FaCheckCircle, FaPlay, FaTrophy } from 'react-icons/fa';
 import { MdWindow } from 'react-icons/md';
 import '../styles/hero.css';
 
