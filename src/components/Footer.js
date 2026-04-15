@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* Top Bar - Call Us + Subscribe */}
+        
         <div className="top-bar">
           <div className="call-us">
             <div className="call-icon">
@@ -49,10 +49,10 @@ export default function Footer() {
               Competently repurpose forward conveniently target e-business multipurpose clean
             </p>
             <div className="social-icons">
-              <a href="#" className="social-icon">f</a>
-              <a href="#" className="social-icon">𝕏</a>
-              <a href="#" className="social-icon">in</a>
-              <a href="#" className="social-icon">p</a>
+              <a href="/" className="social-icon">f</a>
+              <a href="/" className="social-icon">𝕏</a>
+              <a href="/" className="social-icon">in</a>
+              <a href="/" className="social-icon">p</a>
             </div>
           </div>
 
@@ -60,11 +60,11 @@ export default function Footer() {
           <div className="footer-column">
             <h4 className="column-title">Company</h4>
             <ul className="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Meet Our Team</a></li>
-              <li><a href="#">Latest Blog</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">About Us</a></li>
+              <li><a href="/">Our Services</a></li>
+              <li><a href="/">Meet Our Team</a></li>
+              <li><a href="/">Latest Blog</a></li>
             </ul>
           </div>
 

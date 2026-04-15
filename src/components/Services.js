@@ -1,13 +1,12 @@
-// ServiceCards.tsx
 import React from 'react';
-import "../styles/services.css" // or use Tailwind directly
+import "../styles/services.css";
 
 const services = [
   {
     id: 1,
     title: "Post-Event Cleanup",
     icon: "🏠",
-    image: "https://www.cleeny.online/images/service-img2.png", // replace with your image
+    image: "https://www.cleeny.online/images/service-img2.png",
     features: [
       "Fast turnaround for homes and venues",
       "Waste collection and surface reset"
@@ -38,9 +37,9 @@ const services = [
   }
 ];
 
-const ServiceCards: React.FC = () => {
+const ServiceCards = () => {
   return (
-    <div className="service-cards-container">
+    <div className="service-cards-container" id="services">
       <div className="cards-wrapper">
         {services.map((service) => (
           <div key={service.id} className="service-card">
@@ -53,7 +52,7 @@ const ServiceCards: React.FC = () => {
 
             <div className="card-content">
               <h3 className="card-title">{service.title}</h3>
-              
+
               <ul className="features-list">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="feature-item">
@@ -63,9 +62,11 @@ const ServiceCards: React.FC = () => {
                 ))}
               </ul>
 
-              <a href="#" className="view-service-btn">
+              {/* ✅ FIXED LINK */}
+              <a href="/services" className="view-service-btn">
                 View Service →
               </a>
+
             </div>
           </div>
         ))}

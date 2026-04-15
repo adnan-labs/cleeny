@@ -52,7 +52,7 @@ const blogPosts = [
 
 export default function TestimonialsBlog() {
   return (
-    <div className="testimonials-blog-section">
+    <div className="testimonials-blog-section" >
 
       {/* Testimonials Section */}
       <div className="testimonials-container">
@@ -99,7 +99,7 @@ export default function TestimonialsBlog() {
       </div>
 
       {/* Latest Blog Section */}
-      <div className="blog-section">
+      <div className="blog-section" id="blog">
         <div className="blog-header">
           <div>
             <span className="blog-subtitle">LATEST BLOG</span>

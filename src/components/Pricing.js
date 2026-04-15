@@ -49,7 +49,7 @@ export default function Pricing() {
       <div className="pricing-container">
 
         {/* Hero Banner */}
-        <div className="hero-banner">
+        <div className="hero-banner" id="contact">
           <div className="banner-content">
             <h2 className="banner-title">
               Please Call Us to Take the<br />

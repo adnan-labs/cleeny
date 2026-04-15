@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/portfolio.css';   // Import separate CSS file
+import '../styles/portfolio.css';
 
 const portfolioItems = [
   {
@@ -43,16 +43,16 @@ export default function Portfolio() {
           </div>
 
           <button className="view-all-btn">
-            Veiw All Work →
+            View All Work →
           </button>
         </div>
 
-        
-        <div className="portfolio-grid">
+        {/* Portfolio Grid */}
+        <div className="portfolio-grid" id="portfolio">
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className="portfolio-card"
+              className={`portfolio-card ${hovered === item.id ? 'hovered' : ''}`}
               onMouseEnter={() => setHovered(item.id)}
               onMouseLeave={() => setHovered(null)}
             >
@@ -62,7 +62,7 @@ export default function Portfolio() {
                 className="portfolio-image"
               />
 
-             
+              {/* Blue Overlay Card - only for middle item */}
               {item.showOverlay && (
                 <div className="overlay-card">
                   <div className="overlay-location">
@@ -73,12 +73,12 @@ export default function Portfolio() {
                 </div>
               )}
 
-             
+              {/* Category Badge */}
               {!item.showOverlay && (
                 <div className="category-badge">{item.category}</div>
               )}
 
-            
+              {/* Bottom Info for normal cards */}
               {!item.showOverlay && (
                 <div className="card-info">
                   <h3>{item.title}</h3>
@@ -89,7 +89,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        
+        {/* Pagination Dots */}
         <div className="pagination-dots">
           <span className="dot active"></span>
           <span className="dot"></span>
